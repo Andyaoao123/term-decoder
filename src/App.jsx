@@ -115,7 +115,7 @@ async function callLLM({ provider, apiKey, model, userMessage }) {
   };
   if (provider === "openrouter") {
     headers["HTTP-Referer"] = "https://term-decoder.vercel.app";
-    headers["X-Title"] = "术语破译机";
+    headers["X-Title"] = "Term Decoder";
   }
 
   const res = await fetch(endpoint, {
